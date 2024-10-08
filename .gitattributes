@@ -1,0 +1,2 @@
+all_topics_numbered.csv filter=lfs diff=lfs merge=lfs -text
+ArabicNewsClassifier/all_topics_numbered.csv filter=lfs diff=lfs merge=lfs -text
