@@ -27,4 +27,6 @@ The performance of each model is evaluated based on accuracy, precision, recall,
 - Experiment with more advanced models like Transformers.
 - Enhance the GUI for a better user experience.
 - Incorporate user feedback to continuously improve model accuracy.
+## This project is currently being restructured and a new frontend is being developed
+
 
