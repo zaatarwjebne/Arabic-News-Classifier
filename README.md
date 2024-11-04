@@ -1,6 +1,6 @@
 # Arabic News Classifier
 
-This project is an **Arabic News Classifier** that leverages various machine learning algorithms to classify Arabic news articles into different categories. It provides implementations using **Convolutional Neural Networks (CNN)**, **K-Nearest Neighbors (KNN)**, and **XGBoost** for the classification tasks.
+This project is an **Arabic News Classifier** that leverages various machine learning algorithms to categorize Arabic news articles. It uses the **SANAD Dataset** from Kaggle as the primary dataset and provides implementations using **Convolutional Neural Networks (CNN)**, **K-Nearest Neighbors (KNN)**, and **XGBoost** for classification tasks.
 
 ## Project Overview
 
@@ -10,23 +10,22 @@ The objective of this project is to build a reliable and efficient classifier ca
 - **Model Training**: Implementing various algorithms to train the classifier.
 - **Model Evaluation**: Assessing the performance of the models on test data.
 
-
 ## Usage
 
 - To train and classify news articles using a specific model, navigate to the corresponding directory (CNN, KNN, or XGBoost) and run the respective training or classification script.
-- Training python scripts most be run before classification
-
+- Ensure that training scripts are run before classification.
 
 ## Results
 
-The performance of each model is evaluated based on accuracy, precision, recall, and F1-score. The results of the evaluation are included in the respective training scripts.
+Each model's performance is evaluated based on accuracy, precision, recall, and F1-score. Detailed evaluation results are provided in the respective training scripts.
 
 ## Future Work
 
-- Improve the preprocessing steps for better text representation.
-- Experiment with more advanced models like Transformers.
-- Enhance the GUI for a better user experience.
+- Improve preprocessing steps for better text representation.
+- Experiment with advanced models like Transformers.
+- Enhance the GUI for a more user-friendly experience.
 - Incorporate user feedback to continuously improve model accuracy.
-## This project is currently being restructured and a new frontend is being developed
 
+## Ongoing Development
 
+This project is currently undergoing restructuring, and a new frontend web application is being developed to provide a user-friendly interface for interacting with the classifier.
