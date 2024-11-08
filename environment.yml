@@ -1,0 +1,23 @@
+name: ArabicNewsClassification
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - kagglehub
+  - pytorch
+  - matplotlib
+  - scikit-learn
+  - seaborn
+  - flask
+  - flask-cors
+  - xgboost
+  - gensim
+  - pip
+  - nltk
+  - optuna
+  - jupyter
+  - keras
+  - pip:
+      - pyarabic
+prefix: /opt/anaconda3/envs/ArabicNewsClassification
