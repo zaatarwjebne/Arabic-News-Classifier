@@ -6,7 +6,6 @@ import joblib
 import numpy as np
 from gensim.models import Word2Vec
 from Backend.text_processor import preprocess_arabic_text
-from Backend.Models.CNN.CNNArch import TextCNN
 
 app = Flask(__name__)
 
