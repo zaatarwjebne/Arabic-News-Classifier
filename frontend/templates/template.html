@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabic News Classifier | مصنف الأخبار العربية</title>
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>مصنف الأخبار العربية | Arabic News Classifier</h1>
+  <p>أدخل نصًا إخباريًا باللغة العربية أدناه لتصنيفه باستخدام نموذج التعلم الآلي الخاص بنا</p>
+  <p>Enter Arabic news text below to classify it using our machine learning model</p>
+
+  <!-- Text input form -->
+  <form id="classification-form">
+    <label for="model-select" class="input-label">
+      اختر النموذج | Select Model
+    </label>
+    <select id="model-select" name="model" required>
+      <option value="" disabled selected>Select a model</option>
+      <option value="model1">Convolutional Neural Network</option>
+      <option value="model2">K Nearest Neighbours</option>
+      <option value="model3">XGBoost</option>
+
+    </select>
+
+    <label for="text-input" class="input-label">
+      أدخل النص الإخباري | Enter News Text
+    </label>
+    <textarea id="text-input" name="text" rows="6" placeholder="Type or paste Arabic news text here..." required></textarea>
+    <button type="submit">تصنيف | Classify</button>
+  </form>
+
+  <!-- Output field for displaying results -->
+  <div id="output">
+    <h2>نتيجة التصنيف | Classification Result</h2>
+    <p id="result">في انتظار إدخال النص... | Awaiting text input...</p>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('classification-form');
+  const result = document.getElementById('result');
+  const textInput = document.getElementById('text-input');
+  const modelSelect = document.getElementById('model-select');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    result.textContent = 'جارٍ التصنيف... الرجاء الانتظار. | Classifying... Please wait.';
+
+    const formData = new FormData();
+    formData.append('text', textInput.value);
+    formData.append('model', modelSelect.value); // Include selected model
+
+    // Send the text input to the server
+    fetch('/classify', {
+      method: 'POST',
+      body: formData
+    })
+            .then(response => response.json())
+            .then(data => {
+              if (data.error) {
+                result.textContent = `خطأ: ${data.error} | Error: ${data.error}`;
+              } else {
+                result.textContent = `الفئة: ${data.category_ar} | Category: ${data.category}`;
+              }
+            })
+            .catch(error => {
+              result.textContent = `خطأ: ${error} | Error: ${error}`;
+            });
+  });
+</script>
+</body>
+</html>

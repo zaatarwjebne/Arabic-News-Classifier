@@ -1,0 +1,116 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed; /* taken from menalib */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    direction: rtl; /* Default to Arabic (rtl) for bilingual support */
+}
+
+/* Container for Content */
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(249, 241, 228, 0.95);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+/* Instruction Text */
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 20px;
+    text-align: right; /* Align text for Arabic-friendly layout */
+}
+
+/* Custom File Upload Button */
+.custom-file-upload {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* Text Input Box */
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    resize: vertical;
+}
+
+/* Submit Button Styling */
+button {
+    padding: 10px 25px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect */
+button:hover {
+    background-color: #218838;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+/* Output Section */
+#output {
+    margin-top: 20px;
+}
+
+#result {
+    font-size: 1em;
+    font-weight: bold;
+    color: #555555;
+    text-align: center;
+}
+
+/* Bilingual Support for RTL and LTR Text */
+.container[dir="rtl"] {
+    text-align: right;
+}
+
+.container[dir="ltr"] {
+    text-align: left;
+}
