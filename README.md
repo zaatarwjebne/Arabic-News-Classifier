@@ -25,7 +25,7 @@ An advanced machine learning system that classifies Arabic news articles into di
 1. Clone the repository
 2. Create conda environment:
 
-
+```bash
 conda env create -f environment.yml
 
 
