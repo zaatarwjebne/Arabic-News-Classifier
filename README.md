@@ -30,11 +30,12 @@ conda env create -f environment.yml
 
 
 conda activate ArabicNewsClassification
+```
 
-2. Access the web interface through your browser
-3. Select your preferred model
-4. Input Arabic news text
-5. Get instant classification results
+3. Access the web interface through your browser
+4. Select your preferred model
+5. Input Arabic news text
+6. Get instant classification results
 
 ## Model Performance
 - **CNN**: 97.22% accuracy with optimized hyperparameters
