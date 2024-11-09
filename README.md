@@ -1,5 +1,5 @@
 # Arabic News Classifier
-![Classifier Interface](Backend/resources/Screenshot 2024-11-08 130026.png)
+![Classifier Interface](https://github.com/zaatarwjebne/Arabic-News-Classifier/blob/main/Backend/resources/Screenshot%202024-11-08%20130026.png)
 
 ## Overview
 An advanced machine learning system that classifies Arabic news articles into distinct categories using multiple state-of-the-art algorithms. The project utilizes the SANAD Dataset and implements three different classification approaches, each achieving remarkable accuracy:
