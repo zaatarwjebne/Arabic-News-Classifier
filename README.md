@@ -1,31 +1,52 @@
 # Arabic News Classifier
 
-This project is an **Arabic News Classifier** that leverages various machine learning algorithms to categorize Arabic news articles. It uses the **SANAD Dataset** from Kaggle as the primary dataset and provides implementations using **Convolutional Neural Networks (CNN)**, **K-Nearest Neighbors (KNN)**, and **XGBoost** for classification tasks.
+## Overview
+An advanced machine learning system that classifies Arabic news articles into distinct categories using multiple state-of-the-art algorithms. The project utilizes the SANAD Dataset and implements three different classification approaches, each achieving remarkable accuracy:
 
-## Project Overview
+- Convolutional Neural Network (CNN): ~97% accuracy
+- XGBoost: ~97% accuracy
+- K-Nearest Neighbors (KNN): ~95% accuracy
 
-The objective of this project is to build a reliable and efficient classifier capable of understanding and categorizing Arabic news content. The project consists of several components:
+## Features
+- Multi-model classification support
+- Bilingual interface (Arabic/English)
+- Real-time text classification
+- User-friendly web interface
+- Comprehensive text preprocessing
+- Model performance comparison
 
-- **Data Preprocessing**: Preparing the text data for classification.
-- **Model Training**: Implementing various algorithms to train the classifier.
-- **Model Evaluation**: Assessing the performance of the models on test data.
+## Technical Architecture
+- **Frontend**: Flask-based web application with responsive design
+- **Backend**: Python-based ML models
+- **Models**: CNN (PyTorch), XGBoost, and KNN implementations
+- **Text Processing**: Advanced Arabic text preprocessing pipeline
 
-## Usage
+## Installation
+1. Clone the repository
+2. Create conda environment:
 
-- To train and classify news articles using a specific model, navigate to the corresponding directory (CNN, KNN, or XGBoost) and run the respective training or classification script.
-- Ensure that training scripts are run before classification.
 
-## Results
+conda env create -f environment.yml
 
-Each model's performance is evaluated based on accuracy, precision, recall, and F1-score. Detailed evaluation results are provided in the respective training scripts.
 
-## Future Work
+conda activate ArabicNewsClassification
 
-- Improve preprocessing steps for better text representation.
-- Experiment with advanced models like Transformers.
-- Enhance the GUI for a more user-friendly experience.
-- Incorporate user feedback to continuously improve model accuracy.
+2. Access the web interface through your browser
+3. Select your preferred model
+4. Input Arabic news text
+5. Get instant classification results
 
-## Ongoing Development
+## Model Performance
+- **CNN**: 97.22% accuracy with optimized hyperparameters
+- **XGBoost**: 97.08% accuracy after parameter tuning
+- **KNN**: 94.48% accuracy with optimal neighbor configuration
 
-This project is currently undergoing restructuring, and a new frontend web application is being developed to provide a user-friendly interface for interacting with the classifier.
+## Future Development
+- Integration of transformer-based models
+- Enhanced multilingual support
+- Real-time model performance monitoring
+- API endpoint development for external integration
+- Continuous model retraining pipeline
+
+## Contributing
+Contributions are welcome! Please feel free to submit pull requests.
