@@ -28,8 +28,10 @@ An advanced machine learning system that classifies Arabic news articles into di
 
 ```bash
 conda env create -f environment.yml
+```
 
 
+```bash
 conda activate ArabicNewsClassification
 ```
 
